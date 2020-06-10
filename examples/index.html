@@ -11,8 +11,10 @@
   const ibge = new PopcornIBGE()
   async function teste() {
 
-    const uf = await ibge.uf()
+    const uf = await ibge.ufs()
+    const municipios = await ibge.municipios('mg')
     console.log(uf)
+    console.log(municipios)
   }
   teste()
 </script>

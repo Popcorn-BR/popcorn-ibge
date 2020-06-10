@@ -1,7 +1,10 @@
 import 'babel-polyfill';
-import UF from './UF'
+import ufs from './ufs'
+import municipios from './municipios'
+
 export default class PopcornIBGE {
   constructor() {
-    this.uf = UF;
+    this.ufs = ufs;
+    this.municipios = municipios;
   }
 }
