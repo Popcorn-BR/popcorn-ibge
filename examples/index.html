@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<script src="../dist/popcorn-ibge.umd.js"></script>
+<script>
+  const ibge = new PopcornIBGE()
+  async function teste() {
+
+    const uf = await ibge.uf()
+    console.log(uf)
+  }
+  teste()
+</script>
+</body>
+</html>
