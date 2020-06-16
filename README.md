@@ -1,6 +1,7 @@
 # Popcorn IBGE
-[![Build Status](https://travis-ci.com/dennerrondinely/popcorn-ibge.svg?branch=master)](https://travis-ci.com/dennerrondinely/popcorn-ibge)
+[![Build Status](https://travis-ci.com/Popcorn-BR/popcorn-ibge.svg?branch=master)](https://travis-ci.com/Popcorn-BR/popcorn-ibge)
 [![Coverage Status](https://coveralls.io/repos/github/dennerrondinely/popcorn-ibge/badge.svg?branch=master)](https://coveralls.io/github/dennerrondinely/popcorn-ibge?branch=master)
+![npm](https://img.shields.io/npm/dy/popcorn-ibge)
 
 Popcorn-ibge is a javascript library created to facilitate the use of the IBGE locale api.
 

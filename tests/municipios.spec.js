@@ -21,8 +21,8 @@ describe('Municipios', () => {
     fetchedStub.restore();
   });
 
-  describe('smoke testes', () => {
-    it('should exist the spotify.search.albums method', () => {
+  describe('smoke tests', () => {
+    it('should exist the ibge.municipios method', () => {
       expect(ibge.municipios).to.exist;
     });
   })
