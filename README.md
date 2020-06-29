@@ -19,16 +19,16 @@ $ npm install popcorn-ibge --save
 
 ```js
 // to import a specific method
-import PopcornIBGE from 'popcorn-ibge';
+import { ufs } from 'popcorn-ibge';
 
-const ibge = new PopcornIBGE();
+const ibge = ufs();
 
 ```
 ## Methods
 
 > Follow the methods that the library provides.
 
-### ibge.ufs()
+### ufs()
 
 > Rewind an image by calling this method.
 
@@ -38,12 +38,12 @@ const ibge = new PopcornIBGE();
 
 ```js
   async function getData() {
-    const ufs = await ibge.ufs();
+    const ufs = await ufs();
     console.log(ufs);
   };
 ```
 
-### ibge.municipios()
+### municipios()
 
 > Advance an image by calling this method.
 
@@ -53,7 +53,7 @@ const ibge = new PopcornIBGE();
 
 ```js
   async function getData() {
-    const municipios = await ibge.municipios('mg');
+    const municipios = await municipios('mg');
     console.log(municipios);
   };
 ```
