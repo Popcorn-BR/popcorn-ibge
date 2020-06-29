@@ -1,6 +1,4 @@
 # Popcorn IBGE
-[![Build Status](https://travis-ci.com/Popcorn-BR/popcorn-ibge.svg?branch=master)](https://travis-ci.com/Popcorn-BR/popcorn-ibge)
-[![Coverage Status](https://coveralls.io/repos/github/dennerrondinely/popcorn-ibge/badge.svg?branch=master)](https://coveralls.io/github/dennerrondinely/popcorn-ibge?branch=master)
 ![npm](https://img.shields.io/npm/dy/popcorn-ibge)
 
 Popcorn-ibge is a javascript library created to facilitate the use of the IBGE locale api.
@@ -19,16 +17,16 @@ $ npm install popcorn-ibge --save
 
 ```js
 // to import a specific method
-import PopcornIBGE from 'popcorn-ibge';
+import { ufs } from 'popcorn-ibge';
 
-const ibge = new PopcornIBGE();
+const ibge = ufs();
 
 ```
 ## Methods
 
 > Follow the methods that the library provides.
 
-### ibge.ufs()
+### ufs()
 
 > Rewind an image by calling this method.
 
@@ -38,12 +36,12 @@ const ibge = new PopcornIBGE();
 
 ```js
   async function getData() {
-    const ufs = await ibge.ufs();
+    const ufs = await ufs();
     console.log(ufs);
   };
 ```
 
-### ibge.municipios()
+### municipios()
 
 > Advance an image by calling this method.
 
@@ -53,7 +51,7 @@ const ibge = new PopcornIBGE();
 
 ```js
   async function getData() {
-    const municipios = await ibge.municipios('mg');
+    const municipios = await municipios('mg');
     console.log(municipios);
   };
 ```
